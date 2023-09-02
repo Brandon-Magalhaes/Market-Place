@@ -14,6 +14,7 @@ import {
     DropdownMenuShortcut,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
+import Link from "next/link"
   
 
 export default function UserNav() {
@@ -52,7 +53,7 @@ export default function UserNav() {
             </DropdownMenuItem>
             <DropdownMenuSeparator />
           <DropdownMenuItem>
-            Apply Dummy Data
+            <Link href={"/dummy/seed"}>Apply Dummy Products</Link>
             <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
           </DropdownMenuItem>
           </DropdownMenuGroup>
