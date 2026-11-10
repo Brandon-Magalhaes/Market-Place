@@ -1,38 +1,33 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Market-Place
 
-## Getting Started
+Estudo de e-commerce com **Next.js 13 (App Router)**, **TypeScript**, **Tailwind CSS** e componentes no estilo shadcn/ui. O catálogo usa dados de exemplo e a integração com **Stripe** está preparada no cliente.
 
-First, run the development server:
+## O que tem no projeto
+
+- Listagem de produtos com cards (`components/shop`) e dados de seed em `app/dummy`.
+- Página de carrinho (`app/cart`) e botão de carrinho no header.
+- Layout com header, logo e menu de usuário (`components/layout`).
+- Componentes base reutilizáveis em `components/ui` (botão, card, avatar, dropdown).
+- Cliente Stripe isolado em `lib/stripe.ts`.
+
+## Stack
+
+Next.js 13 · React 18 · TypeScript · Tailwind CSS · Radix UI · Stripe · Lucide
+
+## Como rodar
 
 ```bash
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Variáveis de ambiente
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Copie `.env.example` para `.env.local` e preencha com as suas chaves. Nenhuma chave real deve ser commitada.
 
-## Learn More
+## Escopo
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-=======
-# Market-Place
->>>>>>> 4d8dce59bd98e2c73c63be59b58a73d41db5fc4a
+Projeto de estudo de front-end e integração de pagamento. Não é um marketplace em produção: não há autenticação real, banco de dados nem webhook de pagamento implementados.
